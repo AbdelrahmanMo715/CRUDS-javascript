@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CRUDS Javascript</title>
+</head>
+<body class="bg-dark">
+    
+        <div class="container">
+            <div class="head text-center mt-4">
+                <h2>CRUDS Javascript</h2>
+                <p class="text-uppercase">product mangement system </p>
+            </div>
+            <div class="inputs">
+                <input type="text" class="form-control title" placeholder="Title">
+                <div class="count d-flex flex-column flex-md-row align-items-center">
+                    <input  type="number" class="price" placeholder="Price">
+                    <input  type="number" class="taxes" placeholder="Taxes">
+                    <input  type="number" class="ads" placeholder="ADs">
+                    <input  type="number" class="discount" placeholder="discount">
+                    <div class="total bg-info">Total</div>
+                </div>
+                <input type="number" placeholder="Count" class="form-control num-count">
+                <input type="text" placeholder="Category" class="form-control category">
+                <button class="create btn btn-primary w-100">Create</button>
+            </div>
+            <div class="outputs">
+                <input onkeyup="searchData(this.value)" type="text" placeholder="Search" class="form-control my-3 search">
+                <div class="d-flex mb-3 search-btns justify-content-between">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle" class="btn btn-primary srch-title">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory" class="btn btn-primary srch-category">Search By Category</button>
+                </div>
+                    <div class="deleteAllDiv">
+                        
+                    </div>
+                    <table class="mt-3 table-responsive-lg w-100 text-center table-striped table-bordered table-hover table-dark">
+                        <thead>
+                        <tr class="text-uppercase">
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>Total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>iphone</td>
+                                <td>100</td>
+                                <td>5</td>
+                                <td>10</td>
+                                <td>100</td>
+                                <td>8</td>
+                                <td>phone</td>
+                                <td><button class="btn btn-danger">Update</button></td>
+                                <td><button class="btn btn-danger" onclick="">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    
+
+
+
+
+    
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
